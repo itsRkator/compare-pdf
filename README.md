@@ -11,14 +11,14 @@ This server is built with Node.js and Express to compare text content between tw
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/pdf-comparison-server.git`
-2. Navigate to the project directory: `cd pdf-comparison-server`
-3. Install dependencies: `npm install` or `yarn install`
+1. Clone the repository: `https://github.com/itsRkator/compare-pdf`
+2. Navigate to the project directory: `cd compare-pdf`
+3. Install dependencies: `npm install`
 
 ### Running the Server
 
-1. Start the server: `node app.js` or `npm start`
-2. The server will run on port 3000 by default (`http://localhost:3000`)
+1. Start the server: `node index.js` or `npm start`
+2. The server will run on port 3000 by default (`http://localhost:3000/compare-pdfs`)
 
 ## Usage
 
@@ -38,18 +38,10 @@ This server is built with Node.js and Express to compare text content between tw
 - Click Send to initiate the comparison process.
 
 Example using cURL:
-curl -X POST -F "file1=@/path/to/first/file.pdf" -F "file2=@/path/to/second/file.pdf" http://localhost:3000/compare-pdfs
+`curl -X POST -F "file1=@/path/to/first/file.pdf" -F "file2=@/path/to/second/file.pdf" http://localhost:3000/compare-pdfs`
 
 ## Dependencies
 
 - express: Web framework for Node.js
 - multer: Middleware for handling multipart/form-data (file uploads)
 - pdf-parse: Library for extracting text from PDF files
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
