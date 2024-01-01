@@ -7,7 +7,7 @@ This server is built with Node.js and Express to compare text content between tw
 ### Prerequisites
 
 - Node.js installed on your machine
-- npm (Node Package Manager) or yarn
+- npm (Node Package Manager)
 
 ### Installation
 
